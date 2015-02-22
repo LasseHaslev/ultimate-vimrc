@@ -43,3 +43,11 @@ nmap sp :split<cr>
  
 " Create/edit file in the current directory
 nmap :ed :edit %:p:h/
+
+" CtrlP Stuff
+" Familiar commands for file/symbol browsing
+map <D-p> :CtrlP<cr>
+map <C-r> :CtrlPBufTag<cr>
+
+" Map <Space> to / (search)
+map <space> /

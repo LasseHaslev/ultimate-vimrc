@@ -39,5 +39,7 @@ set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 
-" Map <Space> to / (search)
-map <space> /
+" CtrlP Stuff
+" I don't want to pull up these folders/files when calling CtrlP
+set wildignore+=*/vendor/**
+set wildignore+=*/public/forum/**
