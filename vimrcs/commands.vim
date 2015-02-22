@@ -12,3 +12,9 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 " Auto-remove trailing spaces
 autocmd BufWritePre *.php :%s/\s\+$//e
+
+" Return to last edit position when opening files (You want this!)
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif

@@ -44,3 +44,6 @@ set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusl
 set wildignore+=*/vendor/**
 set wildignore+=*/public/forum/**
 set wildignore+=*/node_modules/**
+
+" Remember info about open buffers on close
+set viminfo^=%
