@@ -51,3 +51,6 @@ map <C-r> :CtrlPBufTag<cr>
 
 " Map <Space> to / (search)
 map <space> /
+
+" Nerdcommenter
+nnoremap <leader>cc :call NERDComment(0,"toggle")<C-m>

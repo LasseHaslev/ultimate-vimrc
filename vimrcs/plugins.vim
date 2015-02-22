@@ -20,8 +20,17 @@ Plugin 'scrooloose/nerdtree'
 " https://github.com/kien/ctrlp.vim
 Plugin 'kien/ctrlp.vim'
 
-" Powerline is a statusline plugin for vim
-Plugin 'Lokaltog/vim-powerline'
+" Vim plugin for intensely orgasmic commenting
+Plugin 'scrooloose/nerdcommenter'
+
+" lean & mean status/tabline for vim that's light as air
+Plugin 'bling/vim-airline'
+
+" Surround.vim is all about "surroundings": parentheses, brackets, quotes, XML tags, and more.
+Plugin 'tpope/vim-surround'
+
+" Syntax checking hacks for vim
+Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

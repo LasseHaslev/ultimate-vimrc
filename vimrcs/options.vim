@@ -47,3 +47,7 @@ set wildignore+=*/node_modules/**
 
 " Remember info about open buffers on close
 set viminfo^=%
+
+" NERD Commenter
+" make sure that you have filetype plugins enabled, as the script makes use of |'commentstring'| where possible (which is usually set in a filetype plugin).
+filetype plugin on
