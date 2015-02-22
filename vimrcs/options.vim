@@ -43,3 +43,4 @@ set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusl
 " I don't want to pull up these folders/files when calling CtrlP
 set wildignore+=*/vendor/**
 set wildignore+=*/public/forum/**
+set wildignore+=*/node_modules/**
