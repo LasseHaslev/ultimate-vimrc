@@ -7,7 +7,7 @@ Based on [**JeffreyWay/.vimrc**](https://gist.github.com/JeffreyWay/6753834) and
 Make sure you have the lastest [MacVim](https://code.google.com/p/macvim/) installed.
 
 Clone the repository by running:
-> git clone git://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim
+> git clone git://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim/runtime
 
 After cloning the repository, update the ~/.vimrc file by calling:
 > sh ~/.vim/runtime/install.sh
