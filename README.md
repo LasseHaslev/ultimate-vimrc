@@ -1,13 +1,15 @@
 # Ultimate .vimrc
-This is the ultimate basic vim setup, based on [**JeffreyWay/.vimrc**](https://gist.github.com/JeffreyWay/6753834) and some inspiration from [**Amix/vimrc**](https://github.com/amix/vimrc).
+This is **my personal version** of the ultimate basic vim setup, based on [**JeffreyWay/.vimrc**](https://gist.github.com/JeffreyWay/6753834) and some inspiration from [**Amix/vimrc**](https://github.com/amix/vimrc).
 
-This is meant as a starting point, and contains the essentiels building blocks for a powerfull vim editor. If you are interested in more information check out the configuration section below.
+This branch is based on the [ultimate-vimrc](https://github.com/LasseHaslev/ultimate-vimrc), that is meant as a general starting point for vim, and contains the essentiels building blocks for a powerfull vim editor.
+
+This personal version of is modified to be perfect for my workflow, where I mostly work with html, javascript and php with Laravel.
 
 ##Install
 Make sure you have the lastest [MacVim](https://code.google.com/p/macvim/) installed.
 
 Clone this repository by running:
-> git clone git://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim/runtime
+> git clone -b personal https://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim/runtime
 
 After cloning the repository, update the ~/.vimrc file by calling:
 > sh ~/.vim/runtime/install.sh
@@ -68,6 +70,3 @@ If you want to install more plugins just add them to this file and run:
 
 ####!Important
 Remember to refresh vim after you have done changes to any of these files.
-
-####Example
-If you are interested in how you can use this setup to customize your own, you can see my [personal branch](https://github.com/LasseHaslev/ultimate-vimrc/tree/personal).
