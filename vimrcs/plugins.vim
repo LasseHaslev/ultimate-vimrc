@@ -29,6 +29,12 @@ Plugin 'bling/vim-airline'
 " Surround.vim is all about "surroundings": parentheses, brackets, quotes, XML tags, and more.
 Plugin 'tpope/vim-surround'
 
+" Vim plugin, provides insert mode auto-completion for quotes, parens, brackets, etc.
+Plugin 'Raimondi/delimitMate'
+
+" True Sublime Text style multiple selections for Vim
+Plugin 'terryma/vim-multiple-cursors'
+
 " Syntax checking hacks for vim
 Plugin 'scrooloose/syntastic'
 
