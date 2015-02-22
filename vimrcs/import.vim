@@ -8,6 +8,9 @@ source ~/.vim/runtime/vimrcs/file_mapping.vim
 " Import Vundle plugins
 source ~/.vim/runtime/vimrcs/plugins.vim
 
+" Functions file
+source ~/.vim/runtime/vimrcs/functions.vim
+
 " Commands file
 source ~/.vim/runtime/vimrcs/commands.vim
 

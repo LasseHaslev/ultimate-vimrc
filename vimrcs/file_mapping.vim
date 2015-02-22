@@ -14,7 +14,7 @@ nmap ,gulp :! gulp<cr>
 " nmap ,gulpw :! gulp watch<cr>
 
 " Laravel framework commons
-nmap <leader>lr :e app/routes.php<cr>
-nmap <leader>lca :e app/config/app.php<cr>81Gf(%O
-nmap <leader>lcd :e app/config/database.php<cr>
+nmap <leader>lr :e app/Http/routes.php<cr>
+nmap <leader>lca :e config/app.php<cr>111G$%kO
+nmap <leader>lcd :e config/database.php<cr>
 nmap <leader>lc :e composer.json<cr>
