@@ -53,4 +53,4 @@ map <C-r> :CtrlPBufTag<cr>
 map <space> /
 
 " Nerdcommenter
-cnoremap <leader>cc :call NERDComment(0,"toggle")<C-m>
+nnoremap <leader>cc :call NERDComment(0,"toggle")<C-m>
