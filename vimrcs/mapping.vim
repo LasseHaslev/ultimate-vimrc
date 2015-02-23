@@ -54,3 +54,6 @@ map <space> /
 
 " Nerdcommenter
 nnoremap <leader>cc :call NERDComment(0,"toggle")<C-m>
+
+" Emmet
+let g:user_emmet_leader_key='<C-e>'

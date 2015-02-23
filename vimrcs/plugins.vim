@@ -38,6 +38,26 @@ Plugin 'terryma/vim-multiple-cursors'
 " Syntax checking hacks for vim
 Plugin 'scrooloose/syntastic'
 
+""" Custom plugins to match my workflow """
+
+" A Vim plugin for visually displaying indent levels in code
+Plugin 'nathanaelkane/vim-indent-guides.git'
+
+" emmet for vim
+Plugin 'mattn/emmet-vim'
+
+" Ultimate auto-completion system for Vim. http://www.vim.org/scripts/script.php?script_id=2620
+Plugin 'Shougo/neocomplcache.vim'
+
+" UltiSnips - The ultimate snippet solution for Vim.
+Plugin 'SirVer/ultisnips'
+
+" vim-snipmate default snippets (Previously snipmate-snippets)
+Plugin 'honza/vim-snippets'
+
+" Bootstrap 3.2 markup snippets for vim-snipmate
+Plugin 'bonsaiben/bootstrap-snippets'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
