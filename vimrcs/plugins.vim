@@ -58,6 +58,9 @@ Plugin 'honza/vim-snippets'
 " Bootstrap 3.2 markup snippets for vim-snipmate
 Plugin 'bonsaiben/bootstrap-snippets'
 
+" fugitive.vim: a Git wrapper so awesome, it should be illegal
+Plugin 'tpope/vim-fugitive'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

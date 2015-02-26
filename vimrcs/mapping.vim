@@ -53,7 +53,10 @@ map <C-r> :CtrlPBufTag<cr>
 map <space> /
 
 " Nerdcommenter
-nnoremap <leader>cc :call NERDComment(0,"toggle")<C-m>
+map ,cc <Plug>NERDCommenterToggle
 
 " Emmet
 let g:user_emmet_leader_key='<C-e>'
+
+" Multiple cursors
+let g:multi_cursor_next_key='<C-s>'
