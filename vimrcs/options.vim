@@ -51,6 +51,8 @@ set viminfo^=%
 " NERD Commenter
 " make sure that you have filetype plugins enabled, as the script makes use of |'commentstring'| where possible (which is usually set in a filetype plugin).
 filetype plugin on
+let NERDSpaceDelims = 1
+let g:NERDCreateDefaultMappings = 0
 
 " Enable NEOCOMPLCACHE on startup
 let g:neocomplcache_enable_at_startup = 1 
@@ -62,6 +64,3 @@ let g:indent_guides_auto_colors = 0
 " delimitMate
 let delimitMate_expand_cr = 1
 let delimitMate_expand_space = 1
-
-" NerdCommenter
-let NERDSpaceDelims = 1

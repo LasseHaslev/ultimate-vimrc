@@ -16,7 +16,7 @@ nmap ,lgm :! php artisan make:migration
 nmap ,lgr :! php artisan make:request 
 
 " Run gulp command
-nmap ,gulp :! g<cr>
+nmap ,g :! gulp<cr>
 " nmap ,gulpw :! gulp watch<cr>
 
 " Laravel framework commons
