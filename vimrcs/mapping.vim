@@ -60,3 +60,7 @@ let g:user_emmet_leader_key='<C-e>'
 
 " Multiple cursors
 let g:multi_cursor_next_key='<C-s>'
+
+" Config for dash.vim
+nmap <silent> <leader>d <Plug>DashSearch
+nmap <silent> <leader>dg <Plug>DashGlobalSearch

@@ -55,11 +55,14 @@ Plugin 'SirVer/ultisnips'
 " vim-snipmate default snippets (Previously snipmate-snippets)
 Plugin 'honza/vim-snippets'
 
-" Bootstrap 3.2 markup snippets for vim-snipmate
-Plugin 'bonsaiben/bootstrap-snippets'
+" Twitter Bootstrap 3 Snippets for Vim
+Plugin 'chrisgillis/vim-bootstrap3-snippets'
 
 " fugitive.vim: a Git wrapper so awesome, it should be illegal
 Plugin 'tpope/vim-fugitive'
+
+" Search Dash.app from Vim
+Plugin 'rizzatti/dash.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
