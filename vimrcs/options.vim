@@ -29,6 +29,7 @@ set visualbell           " don't beep
 set noerrorbells         " don't beep
 set autowrite  "Save on buffer switch
 set mouse=a
+syntax on                       " Set syntax color on"
 
 "Show (partial) command in the status line
 set showcmd
