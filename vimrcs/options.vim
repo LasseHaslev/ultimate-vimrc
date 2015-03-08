@@ -51,3 +51,5 @@ set viminfo^=%
 " NERD Commenter
 " make sure that you have filetype plugins enabled, as the script makes use of |'commentstring'| where possible (which is usually set in a filetype plugin).
 filetype plugin on
+let NERDSpaceDelims = 1
+let g:NERDCreateDefaultMappings = 0
