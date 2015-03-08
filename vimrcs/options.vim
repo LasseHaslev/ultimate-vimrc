@@ -64,3 +64,6 @@ let g:indent_guides_auto_colors = 0
 " delimitMate
 let delimitMate_expand_cr = 1
 let delimitMate_expand_space = 1
+
+" Run shell as the normal terminal bash shell
+set shell=bash\ --login
