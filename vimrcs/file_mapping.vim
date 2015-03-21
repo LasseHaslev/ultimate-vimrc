@@ -12,8 +12,9 @@ nmap ,todo :e todo.txt<cr>
 
 " Laravel generators
 nmap ,lgc :! php artisan make:controller 
-nmap ,lgm :! php artisan make:migration 
+nmap ,lgm :! php artisan make:model 
 nmap ,lgr :! php artisan make:request 
+nmap ,lgs :! php artisan make:seed 
 
 " Run gulp command
 nmap ,g :! gulp<cr>
@@ -24,3 +25,5 @@ nmap <leader>lr :e app/Http/routes.php<cr>
 nmap <leader>lca :e config/app.php<cr>111G$%kO
 nmap <leader>lcd :e config/database.php<cr>
 nmap <leader>lc :e composer.json<cr>
+nmap <leader>lb :e bower.json<cr>
+nmap <leader>lg :e gulpfile.js<cr>

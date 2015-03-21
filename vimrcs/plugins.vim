@@ -64,6 +64,18 @@ Plugin 'tpope/vim-fugitive'
 " Search Dash.app from Vim
 Plugin 'rizzatti/dash.vim'
 
+" Maintains a history of previous yanks, changes and deletes
+Plugin 'vim-scripts/YankRing.vim'
+
+" SIMPLE TODO IN VIM
+Plugin 'vitalk/vim-simple-todo'
+
+" A vim plugin to accelerate up-down moving!
+Plugin 'rhysd/accelerated-jk'
+
+" Gundo.vim is Vim plugin to visualize your Vim undo tree.
+Plugin 'sjl/gundo.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

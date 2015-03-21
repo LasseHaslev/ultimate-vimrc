@@ -67,3 +67,12 @@ nmap <silent> <leader>dg <Plug>DashGlobalSearch
 
 " Quick mapping for the :sh command
 nmap <leader>sh :sh<cr>
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
+" Function for start using (http://vimawesome.com/plugin/accelerated-jk-superman)
+nmap j <Plug>(accelerated_jk_gj)
+nmap k <Plug>(accelerated_jk_gk)
+
+nnoremap ,z :GundoToggle<CR>
