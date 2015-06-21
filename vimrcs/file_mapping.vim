@@ -18,12 +18,14 @@ nmap ,lgs :! php artisan make:seed
 
 " Run gulp command
 nmap ,g :! gulp<cr>
+nmap ,env :e .env<cr>
 " nmap ,gulpw :! gulp watch<cr>
 
 " Laravel framework commons
 nmap <leader>lr :e app/Http/routes.php<cr>
-nmap <leader>lca :e config/app.php<cr>111G$%kO
+nmap <leader>lca :e config/app.php<cr>111G$%k
 nmap <leader>lcd :e config/database.php<cr>
 nmap <leader>lc :e composer.json<cr>
 nmap <leader>lb :e bower.json<cr>
 nmap <leader>lg :e gulpfile.js<cr>
+nmap <leader>le :e .env<cr>

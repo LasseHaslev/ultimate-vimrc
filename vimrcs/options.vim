@@ -81,3 +81,12 @@ set shell=bash\ --login
 set undofile
 " set a directory to store the undo history
 set undodir=~/.vim/vimundo/
+
+" Settings for vim-indent guides
+let g:indent_guides_enable_on_vim_startup = 1 "let g:indent_guides_auto_colors = 0
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#333333   ctermbg=3
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#212121   ctermbg=4
+
+" Open vim in fullscreen
+set fu
