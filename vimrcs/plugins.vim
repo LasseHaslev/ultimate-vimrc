@@ -47,7 +47,7 @@ Plugin 'nathanaelkane/vim-indent-guides.git'
 Plugin 'mattn/emmet-vim'
 
 " Ultimate auto-completion system for Vim. http://www.vim.org/scripts/script.php?script_id=2620
-Plugin 'Shougo/neocomplcache.vim'
+Plugin 'Shougo/neocomplete.vim'
 
 " UltiSnips - The ultimate snippet solution for Vim.
 Plugin 'SirVer/ultisnips'

@@ -35,7 +35,7 @@ nmap 75 :vertical resize 120<cr>
 nmap :sp :rightbelow sp<cr>
 
 "Load the current buffer in Chrome
-nmap ,c :!open -a Google\ Chrome<cr>
+" nmap ,c :!open -a Google\ Chrome<cr>
 
 " Open splits
 nmap vs :vsplit<cr>
