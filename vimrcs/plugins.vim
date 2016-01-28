@@ -76,6 +76,9 @@ Plugin 'rhysd/accelerated-jk'
 " Gundo.vim is Vim plugin to visualize your Vim undo tree.
 Plugin 'sjl/gundo.vim'
 
+" Vim script for text filtering and alignment
+Plugin 'godlygeek/tabular'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

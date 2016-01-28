@@ -10,11 +10,17 @@ nmap ,vrcp :e ~/.vim/runtime/vimrcs/plugins.vim<cr>
 " Edit todo list for project
 nmap ,todo :e todo.txt<cr>
 
+" Gitignore
+nmap <leader>gig :e .gitignore<cr>
+
 " Laravel generators
 nmap ,lgc :! php artisan make:controller 
 nmap ,lgm :! php artisan make:model 
 nmap ,lgr :! php artisan make:request 
 nmap ,lgs :! php artisan make:seed 
+nmap ,lgt :! php artisan make:test 
+nmap ,lgj :! php artisan make:job 
+nmap ,lgp :! php artisan make:provider 
 
 " Run gulp command
 nmap ,g :! gulp<cr>

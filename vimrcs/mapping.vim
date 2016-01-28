@@ -27,9 +27,9 @@ nmap <C-l> <C-w>l
 
 "Resize vsplit
 nmap <C-v> :vertical resize +5<cr>
-nmap 25 :vertical resize 40<cr>
-nmap 50 <c-w>=
-nmap 75 :vertical resize 120<cr>
+nmap <Leader>25 :vertical resize 40<cr>
+nmap <Leader>50 <c-w>=
+nmap <Leader>75 :vertical resize 120<cr>
 
 " Create split below
 nmap :sp :rightbelow sp<cr>
@@ -77,3 +77,11 @@ nmap j <Plug>(accelerated_jk_gj)
 nmap k <Plug>(accelerated_jk_gk)
 
 nnoremap ,z :GundoToggle<CR>
+
+if exists(":Tabularize")
+    nmap <Leader>t :Tabularize /
+    " nmap <Leader>a= :Tabularize /=<CR>
+    " vmap <Leader>a= :Tabularize /=<CR>
+    " nmap <Leader>a: :Tabularize /:\zs<CR>
+    " vmap <Leader>a: :Tabularize /:\zs<CR>
+endif
