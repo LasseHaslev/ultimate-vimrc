@@ -55,4 +55,4 @@ let NERDSpaceDelims = 1
 let g:NERDCreateDefaultMappings = 0
 
 " Run shell as the normal terminal bash shell
-set shell=bash\ --login
+" set shell=bash\ --login
