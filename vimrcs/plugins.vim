@@ -79,6 +79,23 @@ Plugin 'sjl/gundo.vim'
 " Vim script for text filtering and alignment
 Plugin 'godlygeek/tabular'
 
+" Vim syntax highlighting for Vue components.
+Plugin 'posva/vim-vue'
+
+" Syntax highlighting for Stylus.
+Plugin 'wavded/vim-stylus'
+
+" vinegar.vim: combine with netrw to create a delicious salad dressing
+Plugin 'tpope/vim-vinegar'
+
+" Vim plugin for the_silver_searcher, 'ag', a replacement for the Perl module / CLI script 'ack' 
+Plugin 'rking/ag.vim'
+
+" Global search and replace for VI
+Plugin 'skwp/greplace.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+

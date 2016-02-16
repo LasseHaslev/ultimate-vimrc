@@ -1,11 +1,12 @@
 " Shortcuts for editing vimrc files
-nmap ,vrci :e ~/.vim/runtime/vimrcs/import.vim<cr>
-nmap ,vrcfm :e ~/.vim/runtime/vimrcs/file_mapping.vim<cr>
-nmap ,vrcf :e ~/.vim/runtime/vimrcs/functions.vim<cr>
-nmap ,vrcc :e ~/.vim/runtime/vimrcs/commands.vim<cr>
-nmap ,vrcm :e ~/.vim/runtime/vimrcs/mapping.vim<cr>
-nmap ,vrco :e ~/.vim/runtime/vimrcs/options.vim<cr>
-nmap ,vrcp :e ~/.vim/runtime/vimrcs/plugins.vim<cr>
+nmap ,ev :e ~/.vim/runtime/vimrcs/<cr>
+nmap ,evi :e ~/.vim/runtime/vimrcs/import.vim<cr>
+nmap ,evfm :e ~/.vim/runtime/vimrcs/file_mapping.vim<cr>
+nmap ,evf :e ~/.vim/runtime/vimrcs/functions.vim<cr>
+nmap ,evc :e ~/.vim/runtime/vimrcs/commands.vim<cr>
+nmap ,evm :e ~/.vim/runtime/vimrcs/mapping.vim<cr>
+nmap ,evo :e ~/.vim/runtime/vimrcs/options.vim<cr>
+nmap ,evp :e ~/.vim/runtime/vimrcs/plugins.vim<cr>
 
 " Edit todo list for project
 nmap ,todo :e todo.txt<cr>
@@ -36,3 +37,6 @@ nmap <leader>lp :e package.json<cr>
 nmap <leader>lb :e bower.json<cr>
 nmap <leader>lg :e gulpfile.js<cr>
 nmap <leader>le :e .env<cr>
+
+" Bash profile
+nmap <leader>bp :e ~/.zshrc<cr>G

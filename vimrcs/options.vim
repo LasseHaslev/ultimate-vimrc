@@ -2,6 +2,8 @@
 " Set colorchem
 colorscheme xoria256
 
+" set macligatures
+
 " set guifont=menlo\ for\ powerline:h40
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar

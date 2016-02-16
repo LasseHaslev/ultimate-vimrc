@@ -48,12 +48,28 @@ nmap :ed :edit %:p:h/
 " Familiar commands for file/symbol browsing
 map <C-f> :CtrlP<cr>
 map <C-r> :CtrlPBufTag<cr>
+" map <C-r> :CtrlPMRUFiles<cr>
+
+" Ctags
+" Go to the original method
+map <leader>b <C-]>
+" Next tag
+map <leader>bn :tn<cr>
+" previus tag
+map <leader>bp :tp<cr>
+" Back out to the original file
+map <leader>bo <C-t>
+" Update Ctag file
+nmap <leader>ct :!ctags -R<cr>
 
 " Map <Space> to / (search)
 map <space> /
+" Remove search results
+nmap <Leader><space> :nohlsearch<cr>
+set incsearch
 
 " Nerdcommenter
-map ,cc <Plug>NERDCommenterToggle
+map <leader>cc <Plug>NERDCommenterToggle
 
 " Emmet
 let g:user_emmet_leader_key='<C-e>'
@@ -76,7 +92,17 @@ cmap w!! w !sudo tee > /dev/null %
 nmap j <Plug>(accelerated_jk_gj)
 nmap k <Plug>(accelerated_jk_gk)
 
+" greplace
+set grepprg=ag
+let g:grep_cmd_opts = '--line-numbers --noheading'
+
 nnoremap ,z :GundoToggle<CR>
+
+" Search / Search Replace
+" Search sidewide
+nmap <leader>s :Ag 
+" Search and replace project wide
+nmap <leader>sr :Gsearch<cr> 
 
 if exists(":Tabularize")
     nmap <Leader>t :Tabularize /
