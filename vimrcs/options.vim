@@ -1,6 +1,7 @@
 " Style the vim
 " Set colorchem
 colorscheme xoria256
+" colorscheme seoul256
 
 " set macligatures
 
@@ -72,6 +73,16 @@ let g:indent_guides_auto_colors = 0
 " delimitMate
 let delimitMate_expand_cr = 1
 let delimitMate_expand_space = 1
+
+" YouCompleteMe
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" Ultisnips
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " Run shell as the normal terminal bash shell
 " set shell=bash\ --login

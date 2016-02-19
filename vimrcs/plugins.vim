@@ -46,8 +46,11 @@ Plugin 'nathanaelkane/vim-indent-guides.git'
 " emmet for vim
 Plugin 'mattn/emmet-vim'
 
-" Ultimate auto-completion system for Vim. http://www.vim.org/scripts/script.php?script_id=2620
-Plugin 'Shougo/neocomplete.vim'
+" Perform all your vim insert mode completions with Tab
+Plugin 'ervandew/supertab'
+
+" A code-completion engine for Vim
+Plugin 'Valloric/YouCompleteMe'
 
 " UltiSnips - The ultimate snippet solution for Vim.
 Plugin 'SirVer/ultisnips'
@@ -94,8 +97,12 @@ Plugin 'rking/ag.vim'
 " Global search and replace for VI
 Plugin 'skwp/greplace.vim'
 
+" Distraction-free writing in Vim
+Plugin 'junegunn/goyo.vim'
+
+" Low-contrast Vim color scheme based on Seoul Colors
+Plugin 'junegunn/seoul256.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-
-

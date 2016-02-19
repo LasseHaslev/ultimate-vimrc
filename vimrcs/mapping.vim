@@ -98,11 +98,28 @@ let g:grep_cmd_opts = '--line-numbers --noheading'
 
 nnoremap ,z :GundoToggle<CR>
 
+" Goyo
+let g:goyo_width = 100
+nmap <leader>vs :Goyo<cr>
+
 " Search / Search Replace
 " Search sidewide
 nmap <leader>s :Ag 
 " Search and replace project wide
 nmap <leader>sr :Gsearch<cr> 
+
+" Change colors
+let g:selected_colorscheme = 0
+function! SwapCol()
+    if g:selected_colorscheme
+        let g:selected_colorscheme = 0
+        :colorscheme xoria256
+    else
+        let g:selected_colorscheme = 1
+        :colorscheme seoul256
+    endif
+endfunction
+nmap <leader>co :call SwapCol()<cr>
 
 if exists(":Tabularize")
     nmap <Leader>t :Tabularize /
