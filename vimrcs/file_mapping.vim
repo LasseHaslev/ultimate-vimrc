@@ -1,32 +1,36 @@
+" Edit git ignore file
+nmap <leader>gi :e .gitignore<cr>
+
 " Shortcuts for editing vimrc files
-nmap ,ev :e ~/.vim/runtime/vimrcs/<cr>
-nmap ,evi :e ~/.vim/runtime/vimrcs/import.vim<cr>
-nmap ,evfm :e ~/.vim/runtime/vimrcs/file_mapping.vim<cr>
-nmap ,evf :e ~/.vim/runtime/vimrcs/functions.vim<cr>
-nmap ,evc :e ~/.vim/runtime/vimrcs/commands.vim<cr>
-nmap ,evm :e ~/.vim/runtime/vimrcs/mapping.vim<cr>
-nmap ,evo :e ~/.vim/runtime/vimrcs/options.vim<cr>
-nmap ,evp :e ~/.vim/runtime/vimrcs/plugins.vim<cr>
+nmap <leader>ev :e ~/.vim/runtime/vimrcs/<cr>
+nmap <leader>evi :e ~/.vim/runtime/vimrcs/import.vim<cr>
+nmap <leader>evfm :e ~/.vim/runtime/vimrcs/file_mapping.vim<cr>
+nmap <leader>evf :e ~/.vim/runtime/vimrcs/functions.vim<cr>
+nmap <leader>evc :e ~/.vim/runtime/vimrcs/commands.vim<cr>
+nmap <leader>evm :e ~/.vim/runtime/vimrcs/mapping.vim<cr>
+nmap <leader>evo :e ~/.vim/runtime/vimrcs/options.vim<cr>
+nmap <leader>evp :e ~/.vim/runtime/vimrcs/plugins.vim<cr>
 
 " Edit todo list for project
-nmap ,todo :e todo.txt<cr>
+nmap <leader>todo :e todo.txt<cr>
 
 " Gitignore
 nmap <leader>gig :e .gitignore<cr>
 
 " Laravel generators
-nmap ,lgc :! php artisan make:controller 
-nmap ,lgm :! php artisan make:model 
-nmap ,lgr :! php artisan make:request 
-nmap ,lgs :! php artisan make:seed 
-nmap ,lgt :! php artisan make:test 
-nmap ,lgj :! php artisan make:job 
-nmap ,lgp :! php artisan make:provider 
+nmap <leader>lgc :! php artisan make:controller 
+nmap <leader>lgm :! php artisan make:model 
+nmap <leader>lgr :! php artisan make:request 
+nmap <leader>lgs :! php artisan make:seed 
+nmap <leader>lgt :! php artisan make:test 
+nmap <leader>lgj :! php artisan make:job 
+nmap <leader>lgp :! php artisan make:provider 
 
 " Run gulp command
-nmap ,g :! gulp<cr>
-nmap ,env :e .env<cr>
-" nmap ,gulpw :! gulp watch<cr>
+nmap <leader>g :! gulp<cr>
+nmap <leader>gf :e gulpfile.js<cr>
+nmap <leader>env :e .env<cr>
+" nmap <leader>gulpw :! gulp watch<cr>
 
 " Laravel framework commons
 nmap <leader>lr :e app/Http/routes.php<cr>

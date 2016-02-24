@@ -101,5 +101,8 @@ let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#333333   ctermbg=3
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#212121   ctermbg=4
 
+" Auto close html tags
+" :iabbrev </ </<C-X><C-O>
+
 " Open vim in fullscreen
 set fu

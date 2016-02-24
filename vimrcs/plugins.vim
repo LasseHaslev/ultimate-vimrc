@@ -103,6 +103,12 @@ Plugin 'junegunn/goyo.vim'
 " Low-contrast Vim color scheme based on Seoul Colors
 Plugin 'junegunn/seoul256.vim'
 
+" Up-to-date PHP syntax file (5.3–5.6 support)
+Plugin 'StanAngeloff/php.vim'
+
+" types "use" statements for you
+Plugin 'arnaud-lb/vim-php-namespace'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

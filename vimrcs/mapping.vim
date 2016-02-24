@@ -50,6 +50,25 @@ map <C-f> :CtrlP<cr>
 map <C-r> :CtrlPBufTag<cr>
 " map <C-r> :CtrlPMRUFiles<cr>
 
+" Vim PHP namespace
+function! IPhpInsertUse()
+    call PhpInsertUse()
+    call feedkeys('a',  'n')
+endfunction
+autocmd FileType php inoremap <Leader>na <Esc>:call IPhpInsertUse()<CR>
+autocmd FileType php noremap <Leader>na :call PhpInsertUse()<CR>
+
+function! IPhpExpandClass()
+    call PhpExpandClass()
+    call feedkeys('a', 'n')
+endfunction
+autocmd FileType php inoremap <Leader>nf <Esc>:call IPhpExpandClass()<CR>
+autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
+
+"Sort PHP use statements
+"http://stackoverflow.com/questions/11531073/how-do-you-sort-a-range-of-lines-by-length
+vmap <Leader>su ! awk '{ print length(), $0 \| "sort -n \| cut -d\\  -f2-" }'<cr>
+
 " Ctags
 " Go to the original method
 map <leader>b <C-]>
@@ -60,7 +79,8 @@ map <leader>bp :tp<cr>
 " Back out to the original file
 map <leader>bo <C-t>
 " Update Ctag file
-nmap <leader>ct :!ctags -R<cr>
+nmap <leader>ct<space> :!ctags -R --exclude=node_modules --exclude=vendor --exclude=database --exclude=Graphs --exclude=storage --exclude=public 
+nmap <leader>ct :!ctags -R --exclude=node_modules --exclude=vendor --exclude=database --exclude=Graphs --exclude=storage --exclude=public<cr>
 
 " Map <Space> to / (search)
 map <space> /
@@ -120,6 +140,9 @@ function! SwapCol()
     endif
 endfunction
 nmap <leader>co :call SwapCol()<cr>
+
+" Mapping for exporting DOT ( 'brew install graphviz' )
+nmap <leader>dot :w<cr>:!dot -Tpng % -o %.png<cr>:!imgcat %.png<cr>
 
 if exists(":Tabularize")
     nmap <Leader>t :Tabularize /
