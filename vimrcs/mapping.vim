@@ -15,6 +15,9 @@ nnoremap k gk
 
 "Easy escaping to normal model
 imap jj <esc>
+
+" paste multiple times
+xnoremap p pgvy
  
 "Auto change directory to match current file ,cd
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
@@ -79,8 +82,9 @@ map <leader>bp :tp<cr>
 " Back out to the original file
 map <leader>bo <C-t>
 " Update Ctag file
-nmap <leader>ct<space> :!ctags -R --exclude=node_modules --exclude=vendor --exclude=database --exclude=Graphs --exclude=storage --exclude=public 
-nmap <leader>ct :!ctags -R --exclude=node_modules --exclude=vendor --exclude=database --exclude=Graphs --exclude=storage --exclude=public<cr>
+nmap <leader>ct :!ctags -R<cr>
+nmap <leader>lct<space> :!ctags -R --exclude=node_modules --exclude=database --exclude=Graphs --exclude=storage --exclude=public 
+nmap <leader>lct :!ctags -R --exclude=node_modules --exclude=database --exclude=Graphs --exclude=storage --exclude=public<cr>
 
 " Map <Space> to / (search)
 map <space> /

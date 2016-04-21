@@ -50,7 +50,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'ervandew/supertab'
 
 " A code-completion engine for Vim
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 
 " UltiSnips - The ultimate snippet solution for Vim.
 Plugin 'SirVer/ultisnips'

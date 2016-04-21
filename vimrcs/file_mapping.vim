@@ -20,6 +20,7 @@ nmap <leader>gig :e .gitignore<cr>
 " Laravel generators
 nmap <leader>lgc :! php artisan make:controller 
 nmap <leader>lgm :! php artisan make:model 
+nmap <leader>lgmi :! php artisan make:migration 
 nmap <leader>lgr :! php artisan make:request 
 nmap <leader>lgs :! php artisan make:seed 
 nmap <leader>lgt :! php artisan make:test 
@@ -28,7 +29,7 @@ nmap <leader>lgp :! php artisan make:provider
 
 " Run gulp command
 nmap <leader>g :! gulp<cr>
-nmap <leader>gf :e gulpfile.js<cr>
+
 nmap <leader>env :e .env<cr>
 " nmap <leader>gulpw :! gulp watch<cr>
 
