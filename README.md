@@ -8,10 +8,9 @@ This personal version of is modified to be perfect for my workflow, where I most
 ##Install
 Make sure you have the lastest [MacVim](https://code.google.com/p/macvim/) installed.
 
-Run the following line in your terminal
-```sh -c "$(curl -fsSL https://raw.githubusercontent.com/LasseHaslev/ultimate-vimrc/personal/install.sh)"```
+Then run the following line in your terminal
 
-This will clone this repository
+```sh -c "$(curl -fsSL https://raw.githubusercontent.com/LasseHaslev/ultimate-vimrc/personal/install.sh)"```
 
 **Restart vim and you are good to go!**
 
