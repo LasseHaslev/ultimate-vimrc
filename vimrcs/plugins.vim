@@ -53,7 +53,9 @@ Plugin 'ervandew/supertab'
 " Plugin 'Valloric/YouCompleteMe'
 
 " UltiSnips - The ultimate snippet solution for Vim.
+if v:version >= 704
 Plugin 'SirVer/ultisnips'
+endif
 
 " vim-snipmate default snippets (Previously snipmate-snippets)
 Plugin 'honza/vim-snippets'

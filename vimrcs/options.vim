@@ -1,6 +1,9 @@
 " Style the vim
 " Set colorchem
-colorscheme xoria256
+try
+    colorscheme xoria256
+catch /^Vim\%((\a\+)\)\=:E185/
+endtry
 " colorscheme seoul256
 
 " set macligatures
@@ -108,4 +111,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#212121   ctermbg=4
 " :iabbrev </ </<C-X><C-O>
 
 " Open vim in fullscreen
-set fu
+try
+    set fu
+catch /^Vim\%((\a\+)\)\=:E518/
+endtry
