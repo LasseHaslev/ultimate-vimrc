@@ -8,14 +8,10 @@ This personal version of is modified to be perfect for my workflow, where I most
 ##Install
 Make sure you have the lastest [MacVim](https://code.google.com/p/macvim/) installed.
 
-Clone this repository by running:
-> git clone -b personal https://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim/runtime
+Run the following line in your terminal
+```sh -c "$(curl -fsSL https://raw.githubusercontent.com/LasseHaslev/ultimate-vimrc/personal/install.sh)"```
 
-After cloning the repository, update the ~/.vimrc file by calling:
-> sh ~/.vim/runtime/install.sh
-
-This vimrc requires [Vundle](https://github.com/gmarik/Vundle.vim). Follow the installation guide, open vim and run:
->:PluginInstall
+This will clone this repository
 
 **Restart vim and you are good to go!**
 
