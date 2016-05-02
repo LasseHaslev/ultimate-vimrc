@@ -29,14 +29,37 @@ Plugin 'bling/vim-airline'
 " Surround.vim is all about "surroundings": parentheses, brackets, quotes, XML tags, and more.
 Plugin 'tpope/vim-surround'
 
-" Vim plugin, provides insert mode auto-completion for quotes, parens, brackets, etc.
-Plugin 'Raimondi/delimitMate'
-
 " True Sublime Text style multiple selections for Vim
 Plugin 'terryma/vim-multiple-cursors'
 
 " Syntax checking hacks for vim
 Plugin 'scrooloose/syntastic'
+
+" Perform all your vim insert mode completions with Tab
+Plugin 'ervandew/supertab'
+
+" UltiSnips - The ultimate snippet solution for Vim.
+if v:version >= 704
+Plugin 'SirVer/ultisnips'
+endif
+
+" vim-snipmate default snippets (Previously snipmate-snippets)
+Plugin 'honza/vim-snippets'
+
+" fugitive.vim: a Git wrapper so awesome, it should be illegal
+Plugin 'tpope/vim-fugitive'
+
+" Maintains a history of previous yanks, changes and deletes
+Plugin 'vim-scripts/YankRing.vim'
+
+" SIMPLE TODO IN VIM
+Plugin 'vitalk/vim-simple-todo'
+
+" Vim plugin for the_silver_searcher, 'ag', a replacement for the Perl module / CLI script 'ack' 
+Plugin 'rking/ag.vim'
+
+" Global search and replace for VI
+Plugin 'skwp/greplace.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

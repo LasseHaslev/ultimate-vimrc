@@ -1,19 +1,21 @@
 # Ultimate .vimrc
 This is the ultimate basic vim setup, based on [**JeffreyWay/.vimrc**](https://gist.github.com/JeffreyWay/6753834) and some inspiration from [**Amix/vimrc**](https://github.com/amix/vimrc).
 
-This is meant as a starting point, and contains the essentiels building blocks for a powerfull vim editor. If you are interested in more information check out the configuration section below.
+This is meant as a starting point for vim, and contains the essentiels building blocks for a powerfull vim editor. If you are interested in more information check out the configuration section below.
+
+**I really recomend checking out this serie [Vim Mastery](https://laracasts.com/series/vim-mastery) from [Jeffrey Way](https://twitter.com/jeffrey_way) to get a full understanding of the power of vim text editor.**
+
+###Example
+If you are interested in how you can use this setup to customize your own, you can see my [personal branch](https://github.com/LasseHaslev/ultimate-vimrc/tree/personal).
+
+This personal version is modified to be perfect for my workflow, where I mostly work with html, javascript and php with Laravel framework.
 
 ##Install
-Make sure you have the lastest [MacVim](https://code.google.com/p/macvim/) installed.
+I recomend using MacVim. Make sure you have the lastest version of [MacVim](https://code.google.com/p/macvim/) installed.
 
-Clone this repository by running:
-> git clone git://github.com/LasseHaslev/ultimate-vimrc.git ~/.vim/runtime
+Then run the following line in your terminal
 
-After cloning the repository, update the ~/.vimrc file by calling:
-> sh ~/.vim/runtime/install.sh
-
-This vimrc requires [Vundle](https://github.com/gmarik/Vundle.vim). Follow the installation guide, open vim and run:
->:PluginInstall
+```sh -c "$(curl -fsSL https://raw.githubusercontent.com/LasseHaslev/ultimate-vimrc/master/install.sh)"```
 
 **Restart vim and you are good to go!**
 
@@ -68,6 +70,3 @@ If you want to install more plugins just add them to this file and run:
 
 ####!Important
 Remember to refresh vim after you have done changes to any of these files.
-
-####Example
-If you are interested in how you can use this setup to customize your own, you can see my [personal branch](https://github.com/LasseHaslev/ultimate-vimrc/tree/personal).

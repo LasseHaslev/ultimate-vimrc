@@ -1,9 +1,11 @@
 " Style the vim
-
 " Set colorchem
-colorscheme xoria256
+try
+    colorscheme xoria256
+catch /^Vim\%((\a\+)\)\=:E185/
+endtry
 
-" set guifont=menlo\ for\ powerline:h16
+" set guifont=menlo\ for\ powerline:h40
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
 set go-=L " Removes left hand scroll bar
@@ -27,17 +29,27 @@ set smartcase                   " ignore case if search pattern is all lowercase
 set timeout timeoutlen=200 ttimeoutlen=100
 set visualbell           " don't beep
 set noerrorbells         " don't beep
-set autowrite  "Save on buffer switch
+" set autowrite                   "Save on buffer switch
+set autowriteall                   "Save on buffer switch
 set mouse=a
+syntax on                       " Set syntax color on"
+
+
 
 "Show (partial) command in the status line
 set showcmd
+
+" Turn backup off, since most stuff is in SVN, git et.c anyway...
+set nobackup
+set nowb
+set noswapfile
 
 " Powerline (Fancy thingy at bottom stuff)
 let g:Powerline_symbols = 'fancy'
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+
 
 " CtrlP Stuff
 " I don't want to pull up these folders/files when calling CtrlP
@@ -54,5 +66,24 @@ filetype plugin on
 let NERDSpaceDelims = 1
 let g:NERDCreateDefaultMappings = 0
 
-" Run shell as the normal terminal bash shell
-" set shell=bash\ --login
+" Ultisnips
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+" Always Save everything
+:au FocusLost * :wa
+
+" tell it to use an undo file
+set undofile
+" set a directory to store the undo history
+set undodir=~/.vim/vimundo/
+
+" Auto close html tags
+" :iabbrev </ </<C-X><C-O>
+
+" Open vim in fullscreen
+try
+    set fu
+catch /^Vim\%((\a\+)\)\=:E518/
+endtry
