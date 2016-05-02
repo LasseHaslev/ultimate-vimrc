@@ -18,7 +18,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # install plugins in vim with Vundle
 echo "Installing vundle plugins"
-vim +PluginInstall
+vim +PluginInstall +qa
 
 # Give feedback that we installed the ultimate vimrc
 echo "Installed the Ultimate Vim setup."
