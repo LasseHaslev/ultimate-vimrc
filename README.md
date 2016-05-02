@@ -5,7 +5,7 @@ This branch is based on the [ultimate-vimrc](https://github.com/LasseHaslev/ulti
 
 This personal version of is modified to be perfect for my workflow, where I mostly work with html, javascript and php with Laravel.
 
-**I really recomend checking out this series [Vim Mastery](https://laracasts.com/series/vim-mastery) from [Jeffrey Way](https://twitter.com/jeffrey_way)**
+**I really recomend checking out this serie [Vim Mastery](https://laracasts.com/series/vim-mastery) from [Jeffrey Way](https://twitter.com/jeffrey_way) to get a full understanding of the power of vim text editor.**
 
 ##Install
 I recomend using MacVim. Make sure you have the lastest version of [MacVim](https://code.google.com/p/macvim/) installed.
