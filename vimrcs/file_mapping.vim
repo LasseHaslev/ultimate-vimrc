@@ -22,7 +22,7 @@ nmap <leader>lgc :! php artisan make:controller
 nmap <leader>lgm :! php artisan make:model 
 nmap <leader>lgmi :! php artisan make:migration 
 nmap <leader>lgr :! php artisan make:request 
-nmap <leader>lgs :! php artisan make:seed 
+nmap <leader>lgs :! php artisan make:seeder 
 nmap <leader>lgt :! php artisan make:test 
 nmap <leader>lgj :! php artisan make:job 
 nmap <leader>lgp :! php artisan make:provider 
@@ -35,7 +35,7 @@ nmap <leader>env :e .env<cr>
 
 " Laravel framework commons
 nmap <leader>lr :e app/Http/routes.php<cr>
-nmap <leader>lca :e config/app.php<cr>111G$%k
+nmap <leader>lca :e config/app.php<cr>124G$%k
 nmap <leader>lcd :e config/database.php<cr>
 nmap <leader>lc :e composer.json<cr>
 nmap <leader>lp :e package.json<cr>
