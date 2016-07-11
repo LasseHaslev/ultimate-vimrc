@@ -85,7 +85,10 @@ Plugin 'sjl/gundo.vim'
 Plugin 'godlygeek/tabular'
 
 " Vim syntax highlighting for Vue components.
-Plugin 'posva/vim-vue'
+" Plugin 'posva/vim-vue'
+
+" Basic syntax highlight for Vue.js components
+Plugin 'darthmall/vim-vue'
 
 " Syntax highlighting for Stylus.
 Plugin 'wavded/vim-stylus'
