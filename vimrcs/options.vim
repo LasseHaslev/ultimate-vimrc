@@ -110,6 +110,12 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#212121   ctermbg=4
 " Auto close html tags
 " :iabbrev </ </<C-X><C-O>
 
+" Handle .vue hightlighting
+au BufRead,BufNewFile *.vue set filetype=html
+" Trying to switch to filetype=html and then prompt the user asking what the filetype should be after indenting. Would like to make a function out of it, but I'm new to this. Anyways:
+nmap <D-ﬁ> :set filetype=html<cr> gg=G'' :set filetype=
+"<D-ﬁ> == CMD+Shift+L
+
 " Open vim in fullscreen
 try
     set fu
