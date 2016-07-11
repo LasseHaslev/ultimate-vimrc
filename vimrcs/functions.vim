@@ -27,3 +27,10 @@ function! AddDependency()
 '
 endfunction
 nmap ,2  :call AddDependency()<cr>
+
+" Add a semiclon to the end of selected line/lines
+function! Semicolon()
+ exec ":norm A;"
+endfunction
+map ;; :call Semicolon()<cr><ESC>
+imap ;; <ESC>:call Semicolon()<cr>a
