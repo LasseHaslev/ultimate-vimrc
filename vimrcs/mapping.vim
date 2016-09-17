@@ -52,6 +52,7 @@ nmap :ed :edit %:p:h/
 map <C-f> :CtrlP<cr>
 map <C-r> :CtrlPBufTag<cr>
 " map <C-r> :CtrlPMRUFiles<cr>
+map <leader>fr :CtrlPClearCache<cr>
 
 " Vim PHP namespace
 function! IPhpInsertUse()
