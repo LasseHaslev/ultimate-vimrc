@@ -35,6 +35,9 @@ nmap <leader>env :e .env<cr>
 
 " Laravel framework commons
 nmap <leader>lr :e app/Http/routes.php<cr>
+" Laravel 5.3
+nmap <leader>lrw :e routes/web.php<cr>
+nmap <leader>lra :e routes/api.php<cr>
 nmap <leader>lca :e config/app.php<cr>126G$%k
 nmap <leader>lcd :e config/database.php<cr>
 nmap <leader>lc :e composer.json<cr>
