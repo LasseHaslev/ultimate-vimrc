@@ -46,5 +46,8 @@ nmap <leader>lb :e bower.json<cr>
 nmap <leader>lg :e gulpfile.js<cr>
 nmap <leader>le :e .env<cr>
 
+" Other
+nmap <leader>rm :e README.md<cr>
+
 " Bash profile
 nmap <leader>bp :e ~/.zshrc<cr>G
