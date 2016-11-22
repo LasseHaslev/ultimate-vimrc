@@ -10,6 +10,8 @@ This personal version of is modified to be perfect for my workflow, where I most
 ##Install
 I recomend using MacVim. Make sure you have the lastest version of [MacVim](https://code.google.com/p/macvim/) installed.
 
+Make shure you hav **npm** installed.
+
 Then run the following line in your terminal
 
 ```sh -c "$(curl -fsSL https://raw.githubusercontent.com/LasseHaslev/ultimate-vimrc/personal/install.sh)"```
