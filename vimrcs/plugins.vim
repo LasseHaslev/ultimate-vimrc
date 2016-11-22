@@ -117,6 +117,9 @@ Plugin 'arnaud-lb/vim-php-namespace'
 " Markdown preview for vim
 Plugin 'suan/vim-instant-markdown'
 
+" Personal vim snippets
+Plugin 'LasseHaslev/vim-snippets', {'name': 'personal-vim-snippets'}
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
