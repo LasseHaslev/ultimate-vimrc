@@ -20,5 +20,9 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo "Installing vundle plugins"
 vim +PluginInstall +qa!
 
+# Install dependencies
+echo "Installing dependencies"
+npm -g install instant-markdown-d
+
 # Give feedback that we installed the ultimate vimrc
 echo "Installed the Ultimate Vim setup."

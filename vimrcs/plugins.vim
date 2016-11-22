@@ -117,6 +117,9 @@ Plugin 'arnaud-lb/vim-php-namespace'
 " Markdown preview for vim
 Plugin 'suan/vim-instant-markdown'
 
+" VIM Php Refactoring Toolbox 
+Plugin 'adoy/vim-php-refactoring-toolbox'
+
 " Personal vim snippets
 Plugin 'LasseHaslev/vim-snippets', {'name': 'personal-vim-snippets'}
 
