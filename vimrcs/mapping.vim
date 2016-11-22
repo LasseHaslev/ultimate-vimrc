@@ -149,6 +149,12 @@ nmap <leader>co :call SwapCol()<cr>
 " Mapping for exporting DOT ( 'brew install graphviz' )
 nmap <leader>dot :w<cr>:!dot -Tpng % -o %.png<cr>:!imgcat %.png<cr>
 
+" Set mapping for php-refactoring
+let g:vim_php_refactoring_use_default_mapping = 0
+nnoremap <unique> <Leader>ep :call PhpExtractClassProperty()<CR>
+vnoremap <unique> <Leader>em :call PhpExtractMethod()<CR>
+
+
 if exists(":Tabularize")
     nmap <Leader>t :Tabularize /
     " nmap <Leader>a= :Tabularize /=<CR>

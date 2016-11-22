@@ -117,6 +117,9 @@ Plugin 'arnaud-lb/vim-php-namespace'
 " Markdown preview for vim
 Plugin 'suan/vim-instant-markdown'
 
+" VIM Php Refactoring Toolbox 
+Plugin 'adoy/vim-php-refactoring-toolbox'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
