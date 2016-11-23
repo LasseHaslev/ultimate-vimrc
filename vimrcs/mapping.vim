@@ -103,10 +103,6 @@ let g:user_emmet_leader_key='<C-e>'
 let g:multi_cursor_next_key='<C-s>'
 let g:multi_cursor_exit_from_insert_mode=0
 
-" Config for dash.vim
-nmap <silent> <leader>d <Plug>DashSearch
-nmap <silent> <leader>dg <Plug>DashGlobalSearch
-
 " Quick mapping for the :sh command
 nmap <leader>sh :sh<cr>
 
@@ -121,30 +117,15 @@ nmap k <Plug>(accelerated_jk_gk)
 set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
 
-nnoremap ,z :GundoToggle<CR>
-
-" Goyo
-let g:goyo_width = 100
-nmap <leader>vs :Goyo<cr>
-
 " Search / Search Replace
 " Search sidewide
 nmap <leader>s :Ag 
+" nmap <leader>s :Hello
+
+nmap <leader>so :so %<cr>
+
 " Search and replace project wide
 nmap <leader>sr :Gsearch<cr> 
-
-" Change colors
-let g:selected_colorscheme = 0
-function! SwapCol()
-    if g:selected_colorscheme
-        let g:selected_colorscheme = 0
-        :colorscheme xoria256
-    else
-        let g:selected_colorscheme = 1
-        :colorscheme seoul256
-    endif
-endfunction
-nmap <leader>co :call SwapCol()<cr>
 
 " Mapping for exporting DOT ( 'brew install graphviz' )
 nmap <leader>dot :w<cr>:!dot -Tpng % -o %.png<cr>:!imgcat %.png<cr>
@@ -153,12 +134,3 @@ nmap <leader>dot :w<cr>:!dot -Tpng % -o %.png<cr>:!imgcat %.png<cr>
 let g:vim_php_refactoring_use_default_mapping = 0
 nnoremap <unique> <Leader>ep :call PhpExtractClassProperty()<CR>
 vnoremap <unique> <Leader>em :call PhpExtractMethod()<CR>
-
-
-if exists(":Tabularize")
-    nmap <Leader>t :Tabularize /
-    " nmap <Leader>a= :Tabularize /=<CR>
-    " vmap <Leader>a= :Tabularize /=<CR>
-    " nmap <Leader>a: :Tabularize /:\zs<CR>
-    " vmap <Leader>a: :Tabularize /:\zs<CR>
-endif

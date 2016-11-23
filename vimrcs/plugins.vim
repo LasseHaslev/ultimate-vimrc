@@ -60,14 +60,8 @@ endif
 " vim-snipmate default snippets (Previously snipmate-snippets)
 Plugin 'honza/vim-snippets'
 
-" Twitter Bootstrap 3 Snippets for Vim
-Plugin 'chrisgillis/vim-bootstrap3-snippets'
-
 " fugitive.vim: a Git wrapper so awesome, it should be illegal
 Plugin 'tpope/vim-fugitive'
-
-" Search Dash.app from Vim
-Plugin 'rizzatti/dash.vim'
 
 " Maintains a history of previous yanks, changes and deletes
 Plugin 'vim-scripts/YankRing.vim'
@@ -79,19 +73,16 @@ Plugin 'vitalk/vim-simple-todo'
 Plugin 'rhysd/accelerated-jk'
 
 " Gundo.vim is Vim plugin to visualize your Vim undo tree.
-Plugin 'sjl/gundo.vim'
-
-" Vim script for text filtering and alignment
-Plugin 'godlygeek/tabular'
+" Plugin 'sjl/gundo.vim'
 
 " Vim syntax highlighting for Vue components.
 " Plugin 'posva/vim-vue'
 
 " Basic syntax highlight for Vue.js components
-Plugin 'darthmall/vim-vue'
+" Plugin 'darthmall/vim-vue'
 
 " Syntax highlighting for Stylus.
-Plugin 'wavded/vim-stylus'
+" Plugin 'wavded/vim-stylus'
 
 " vinegar.vim: combine with netrw to create a delicious salad dressing
 Plugin 'tpope/vim-vinegar'
@@ -102,14 +93,11 @@ Plugin 'rking/ag.vim'
 " Global search and replace for VI
 Plugin 'skwp/greplace.vim'
 
-" Distraction-free writing in Vim
-Plugin 'junegunn/goyo.vim'
-
 " Low-contrast Vim color scheme based on Seoul Colors
 Plugin 'junegunn/seoul256.vim'
 
 " Up-to-date PHP syntax file (5.3–5.6 support)
-Plugin 'StanAngeloff/php.vim'
+" Plugin 'StanAngeloff/php.vim'
 
 " types "use" statements for you
 Plugin 'arnaud-lb/vim-php-namespace'

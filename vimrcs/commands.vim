@@ -1,4 +1,3 @@
-autocmd cursorhold * set nohlsearch
 autocmd cursormoved * set hlsearch
 
 " If you prefer the Omni-Completion tip window to close when a selection is
