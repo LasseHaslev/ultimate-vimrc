@@ -104,7 +104,7 @@ let g:multi_cursor_next_key='<C-s>'
 let g:multi_cursor_exit_from_insert_mode=0
 
 " Quick mapping for the :sh command
-nmap <leader>sh :sh<cr>
+nmap <leader>sh 
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
