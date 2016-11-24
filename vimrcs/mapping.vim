@@ -84,8 +84,8 @@ map <leader>bp :tp<cr>
 map <leader>bo <C-t>
 " Update Ctag file
 nmap <leader>ct :!ctags -R<cr>
-nmap <leader>lct<space> :!ctags -R --exclude=node_modules --exclude=database --exclude=Graphs --exclude=storage --exclude=public --exclude=vendor/phpspec --exclude=vendor/phpunit
-nmap <leader>lct :!ctags -R --exclude=node_modules --exclude=database --exclude=Graphs --exclude=storage --exclude=public --exclude=vendor/phpspec --exclude=vendor/phpunit<cr>
+nmap <leader>ldct :!ctags -R --exclude=node_modules --exclude=database --exclude=Graphs --exclude=storage --exclude=public --exclude=vendor/phpspec --exclude=vendor/phpunit<cr>
+nmap <leader>lct :!ctags -a -R --exclude=node_modules --exclude=database --exclude=Graphs --exclude=storage --exclude=public --exclude=vendor --exclude=vendor<cr>
 
 " Map <Space> to / (search)
 map <space> /
