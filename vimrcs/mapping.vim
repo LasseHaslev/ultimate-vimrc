@@ -17,7 +17,7 @@ nnoremap k gk
 imap jj <esc>
 
 " paste multiple times
-xnoremap p pgvy
+" xnoremap p pgvy
  
 "Auto change directory to match current file ,cd
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
@@ -52,7 +52,7 @@ nmap :ed :edit %:p:h/
 map <C-f> :CtrlP<cr>
 map <C-r> :CtrlPBufTag<cr>
 " map <C-r> :CtrlPMRUFiles<cr>
-map <leader>fr :CtrlPClearCache<cr>
+map <leader>fr :CtrlPClearCache<cr><C-f>
 
 " Vim PHP namespace
 function! IPhpInsertUse()
@@ -120,7 +120,6 @@ let g:grep_cmd_opts = '--line-numbers --noheading'
 " Search / Search Replace
 " Search sidewide
 nmap <leader>s :Ag 
-" nmap <leader>s :Hello
 
 nmap <leader>so :so %<cr>
 
