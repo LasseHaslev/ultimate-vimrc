@@ -10,7 +10,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Colorscheme xoria256
-Plugin 'vim-scripts/xoria256.vim'
+" Plugin 'vim-scripts/xoria256.vim'
+Plugin 'git@github.com:fugalh/desert.vim.git'
 
 " Navigation menu
 " https://github.com/scrooloose/nerdtree

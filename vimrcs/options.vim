@@ -1,7 +1,7 @@
 " Style the vim
 " Set colorchem
 try
-    colorscheme xoria256
+    colorscheme desert
 catch /^Vim\%((\a\+)\)\=:E185/
 endtry
 " colorscheme seoul256
@@ -75,9 +75,6 @@ let g:NERDCreateDefaultMappings = 0
 let g:neocomplcache_enable_at_startup = 1 
 let g:neocomplcache_min_syntax_length = 1
 
-" vim-indent-guides
-let g:indent_guides_auto_colors = 0
-
 " delimitMate
 let delimitMate_expand_cr = 1
 let delimitMate_expand_space = 1
@@ -109,13 +106,15 @@ set undofile
 " set a directory to store the undo history
 set undodir=~/.vim/vimundo/
 
+" vim-indent-guides
+let g:indent_guides_auto_colors = 1
 " Settings for vim-indent guides
 let g:indent_guides_enable_on_vim_startup = 1 "let g:indent_guides_auto_colors = 0
-let g:indent_guides_auto_colors = 0
-hi IndentGuidesOdd  ctermbg=black
-hi IndentGuidesEven ctermbg=darkgrey
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#333333   ctermbg=3
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#212121   ctermbg=4
+" let g:indent_guides_auto_colors = 0
+" hi IndentGuidesOdd  ctermbg=black
+" hi IndentGuidesEven ctermbg=darkgrey
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#333333   ctermbg=3
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#212121   ctermbg=4
 
 " Auto close html tags
 " :iabbrev </ </<C-X><C-O>
