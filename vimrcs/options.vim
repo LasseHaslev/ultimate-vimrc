@@ -98,6 +98,12 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 " Always Save everything
 :au FocusLost * :wa
 
+" setups for vim-javascript
+let g:javascript_plugin_jsdoc = 1 " Enables syntax highlighting for JSDocs.
+let g:javascript_plugin_ngdoc = 1 " Enables some additional syntax highlighting for NGDocs. Requires JSDoc plugin to be enabled as well.
+let g:javascript_plugin_flow = 1 " Enables syntax highlighting for Flow.
+" set foldmethod=syntax " Enables code folding based on our syntax file.
+
 " tell it to use an undo file
 set undofile
 " set a directory to store the undo history
