@@ -8,6 +8,8 @@ endtry
 
 " set macligatures
 
+set updatetime=250 " Reduce update time from 4s to 250ms
+
 " set guifont=menlo\ for\ powerline:h40
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar

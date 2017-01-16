@@ -111,7 +111,11 @@ Plugin 'adoy/vim-php-refactoring-toolbox'
 " Personal vim snippets
 Plugin 'LasseHaslev/vim-snippets', {'name': 'personal-vim-snippets'}
 
+" Adds ";" to end of line
 Plugin 'LasseHaslev/vim-period'
+
+" A Vim plugin which shows a git diff in the gutter (sign column) and stages/undoes hunks.
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
