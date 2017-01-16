@@ -129,6 +129,9 @@ nmap <leader>sr :Gsearch<cr>
 " Mapping for exporting DOT ( 'brew install graphviz' )
 nmap <leader>dot :w<cr>:!dot -Tpng % -o %.png<cr>:!imgcat %.png<cr>
 
+" Setup Easy motion
+map <Leader>f <Plug>(easymotion-s)
+
 " Set mapping for php-refactoring
 let g:vim_php_refactoring_use_default_mapping = 0
 nnoremap <unique> <Leader>ep :call PhpExtractClassProperty()<CR>

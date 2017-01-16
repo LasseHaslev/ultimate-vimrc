@@ -120,6 +120,9 @@ Plugin 'airblade/vim-gitgutter'
 " Vastly improved Javascript indentation and syntax support in Vim. http://www.vim.org/scripts/script.php…
 Plugin 'pangloss/vim-javascript'
 
+" vim motions on speed
+Plugin 'easymotion/vim-easymotion'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
