@@ -132,6 +132,9 @@ nmap <leader>dot :w<cr>:!dot -Tpng % -o %.png<cr>:!imgcat %.png<cr>
 " Setup Easy motion
 map <Leader>f <Plug>(easymotion-s)
 
+" Toggle spellcheck
+map <Leader>sc :setlocal spell!<cr>
+
 " Set mapping for php-refactoring
 let g:vim_php_refactoring_use_default_mapping = 0
 nnoremap <unique> <Leader>ep :call PhpExtractClassProperty()<CR>
