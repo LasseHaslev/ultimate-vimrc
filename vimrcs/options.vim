@@ -39,7 +39,8 @@ set autowriteall                   "Save on buffer switch
 set mouse=a
 syntax on                       " Set syntax color on"
 
-
+" Style spellchecking
+:hi SpellBad guibg=#c62525 ctermbg=224
 
 "Show (partial) command in the status line
 set showcmd
