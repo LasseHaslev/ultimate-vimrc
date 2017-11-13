@@ -131,3 +131,6 @@ try
     set fu
 catch /^Vim\%((\a\+)\)\=:E518/
 endtry
+
+" Word wrap without line breaks in *.md files (http://vim.wikia.com/wiki/Word_wrap_without_line_breaks)
+au BufRead,BufNewFile *.md setlocal wrap linebreak nolist textwidth=0 wrapmargin=0 formatoptions-=t
