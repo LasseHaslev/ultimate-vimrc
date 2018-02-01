@@ -117,6 +117,11 @@ let g:indent_guides_enable_on_vim_startup = 1 "let g:indent_guides_auto_colors =
 " autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#333333   ctermbg=3
 " autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#212121   ctermbg=4
 
+" stephpy/vim-php-cs-fixer
+let g:php_cs_fixer_rules = "@PSR2"
+" let g:php_cs_fixer_config_file = '/Users/lassehaslev/.vim/runtime/settings/php_cs.php'
+let g:php_cs_fixer_config_file = $HOME . '/.vim/runtime/settings/php_cs.php'
+
 " Auto close html tags
 " :iabbrev </ </<C-X><C-O>
 

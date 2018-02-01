@@ -135,6 +135,9 @@ map <Leader>f <Plug>(easymotion-s)
 " Toggle spellcheck
 map <Leader>sc :setlocal spell!<cr>
 
+" stephpy/vim-php-cs-fixer
+nnoremap <silent><leader>pf :call PhpCsFixerFixFile()<CR>
+
 " Set mapping for php-refactoring
 let g:vim_php_refactoring_use_default_mapping = 0
 nnoremap <unique> <Leader>ep :call PhpExtractClassProperty()<CR>

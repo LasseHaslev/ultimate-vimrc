@@ -124,6 +124,9 @@ Plugin 'pangloss/vim-javascript'
 " vim motions on speed
 Plugin 'easymotion/vim-easymotion'
 
+" Use FriendsOfPHP/PHP-CS-Fixer (PHP formatter)
+Plugin 'stephpy/vim-php-cs-fixer'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
