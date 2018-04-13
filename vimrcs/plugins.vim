@@ -50,9 +50,6 @@ if v:version >= 704
 Plug 'SirVer/ultisnips'
 endif
 
-" vim-snipmate default snippets (Previously snipmate-snippets)
-Plug 'honza/vim-snippets'
-
 " Maintains a history of previous yanks, changes and deletes
 Plug 'vim-scripts/YankRing.vim'
 
@@ -79,10 +76,13 @@ Plug 'suan/vim-instant-markdown', { 'for': 'markdown', 'do': '!npm -g install in
 Plug 'adoy/vim-php-refactoring-toolbox', { 'for': 'php' }
 
 " phpcd - A Intelligent/Smart PHP Complete Daemon Plug for Vim/NeoVim https://github.com/lvht/phpcd.vim
-Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
+" Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 
 " Use FriendsOfPHP/PHP-CS-Fixer (PHP formatter)
 Plug 'stephpy/vim-php-cs-fixer', { 'for': 'php', 'do': '!brew install php-cs-fixer' }
+
+" vim-snipmate default snippets (Previously snipmate-snippets)
+Plug 'honza/vim-snippets'
 
 " Personal vim snippets
 Plug 'LasseHaslev/vim-snippets', {'name': 'personal-vim-snippets'}
