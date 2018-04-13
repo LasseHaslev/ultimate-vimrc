@@ -1,4 +1,4 @@
-" Edit git ignore file
+" Edit .gitignore file
 nmap <leader>gi :e .gitignore<cr>
 
 " Shortcuts for editing vimrc files
@@ -11,40 +11,13 @@ nmap <leader>evm :e ~/.vim/runtime/vimrcs/mapping.vim<cr>
 nmap <leader>evo :e ~/.vim/runtime/vimrcs/options.vim<cr>
 nmap <leader>evp :e ~/.vim/runtime/vimrcs/plugins.vim<cr>
 
-" Edit todo list for project
-nmap <leader>todo :e todo.txt<cr>
-
-" Gitignore
-nmap <leader>gig :e .gitignore<cr>
-
-" Laravel generators
-nmap <leader>lgc :! php artisan make:controller 
-nmap <leader>lgm :! php artisan make:model 
-nmap <leader>lgmi :! php artisan make:migration 
-nmap <leader>lgr :! php artisan make:request 
-nmap <leader>lgs :! php artisan make:seeder 
-nmap <leader>lgt :! php artisan make:test 
-nmap <leader>lgj :! php artisan make:job 
-nmap <leader>lgp :! php artisan make:provider 
-
-" Run gulp command
-nmap <leader>g :! gulp<cr>
-
-nmap <leader>env :e .env<cr>
-" nmap <leader>gulpw :! gulp watch<cr>
-
-" Laravel framework commons
-nmap <leader>lr :e app/Http/routes.php<cr>
 " Laravel 5.3
 nmap <leader>lrw :e routes/web.php<cr>
 nmap <leader>lra :e routes/api.php<cr>
-nmap <leader>lca :e config/app.php<cr>138G$%k
-nmap <leader>lcd :e config/database.php<cr>
+nmap <leader>lca :e config/app.php<cr>153G
 nmap <leader>lc :e composer.json<cr>
 nmap <leader>lp :e package.json<cr>
-nmap <leader>lb :e bower.json<cr>
-nmap <leader>lg :e gulpfile.js<cr>
-nmap <leader>le :e .env<cr>
+nmap <leader>env :e .env<cr>
 
 " Other
 nmap <leader>rm :e README.md<cr>

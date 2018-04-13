@@ -114,7 +114,7 @@ Plug 'LasseHaslev/vim-snippets', {'as': 'personal-vim-snippets'}
 Plug 'LasseHaslev/vim-period'
 
 " A Vim plugin which shows a git diff in the gutter (sign column) and stages/undoes hunks.
-Plug 'airblade/vim-gitgutter'
+" Plug 'airblade/vim-gitgutter'
 
 " All of your Plugs must be added before the following line
 call plug#end()
