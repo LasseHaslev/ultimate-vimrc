@@ -63,9 +63,9 @@ Here you can store all vim options, like color, sizes and other modifications.
 
 This is where all the plugins are stored.
 
-We are using [Vundle](https://github.com/gmarik/Vundle.vim) to handle the installation of our plugins.
+We are using [vim-plug](https://github.com/junegunn/vim-plug) to handle the installation of our plugins.
 If you want to install more plugins just add them to this file and run:
->:Pluginstall
+>:PlugInstall
 
 ####!Important
 Remember to refresh vim after you have done changes to any of these files.
