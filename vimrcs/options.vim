@@ -71,6 +71,8 @@ set viminfo^=%
 filetype plugin on
 let NERDSpaceDelims = 1
 let g:NERDCreateDefaultMappings = 0
+" Recommended here https://stackoverflow.com/questions/39157958/vim-comment-out-on-blade-files
+" filetype indent plugin on
 
 " Enable NEOCOMPLCACHE on startup
 let g:neocomplcache_enable_at_startup = 1 
@@ -89,6 +91,9 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+" Add vim-snippets to Ultisnips on special filetypes
+autocmd BufRead,BufNewFile *.blade.php set filetype=laravel.blade.php
 
 " Run shell as the normal terminal bash shell
 " set shell=bash\ --login
