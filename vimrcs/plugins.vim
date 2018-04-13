@@ -85,7 +85,7 @@ Plug 'stephpy/vim-php-cs-fixer', { 'for': 'php', 'do': '!brew install php-cs-fix
 Plug 'honza/vim-snippets'
 
 " Personal vim snippets
-Plug 'LasseHaslev/vim-snippets', {'name': 'personal-vim-snippets'}
+Plug 'LasseHaslev/vim-snippets', {'as': 'personal-vim-snippets'}
 
 " Adds ";" to end of line
 Plug 'LasseHaslev/vim-period'
