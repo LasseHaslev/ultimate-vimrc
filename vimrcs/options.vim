@@ -1,10 +1,5 @@
 " Style the vim
-" Set colorchem
-try
-    colorscheme desert
-catch /^Vim\%((\a\+)\)\=:E185/
-endtry
-" colorscheme seoul256
+colorscheme desert
 
 " set macligatures
 
