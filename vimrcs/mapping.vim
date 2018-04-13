@@ -79,8 +79,15 @@ map <leader>cc <Plug>NERDCommenterToggle
 let g:user_emmet_leader_key='<C-e>'
 
 " Multiple cursors
-let g:multi_cursor_next_key='<C-s>'
-let g:multi_cursor_exit_from_insert_mode=0
+let g:multi_cursor_use_default_mapping=0
+let g:multi_cursor_start_word_key      = '<C-s>'
+" let g:multi_cursor_select_all_word_key = '<A-s>'
+" let g:multi_cursor_start_key           = 'g<C-n>'
+" let g:multi_cursor_select_all_key      = 'g<A-n>'
+let g:multi_cursor_next_key            = '<C-s>'
+let g:multi_cursor_prev_key            = '<C-p>'
+let g:multi_cursor_skip_key            = '<C-x>'
+let g:multi_cursor_quit_key            = '<Esc>'
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
