@@ -50,6 +50,7 @@ nmap :ed :edit %:p:h/
 " CtrlP Stuff
 " Familiar commands for file/symbol browsing
 map <C-f> :CtrlP<cr>
+map <leader><C-f> :CtrlPBuffer<cr>
 map <C-r> :CtrlPBufTag<cr>
 " map <C-r> :CtrlPMRUFiles<cr>
 map <leader>fr :CtrlPClearCache<cr><C-f>

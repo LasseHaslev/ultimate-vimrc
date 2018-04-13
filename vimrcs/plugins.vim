@@ -116,7 +116,7 @@ Plugin 'LasseHaslev/vim-snippets', {'name': 'personal-vim-snippets'}
 Plugin 'LasseHaslev/vim-period'
 
 " A Vim plugin which shows a git diff in the gutter (sign column) and stages/undoes hunks.
-Plugin 'airblade/vim-gitgutter'
+" Plugin 'airblade/vim-gitgutter'
 
 " Vastly improved Javascript indentation and syntax support in Vim. http://www.vim.org/scripts/script.php…
 Plugin 'pangloss/vim-javascript'
