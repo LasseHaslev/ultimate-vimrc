@@ -32,7 +32,20 @@ Plug 'Raimondi/delimitMate'
 Plug 'terryma/vim-multiple-cursors'
 
 " Syntax checking hacks for vim
-Plug 'scrooloose/syntastic'
+function! Installjshint(info)
+  if a:info.status == 'installed' || a:info.force
+    !npm install -g jshint
+  endif
+endfunction
+Plug 'scrooloose/syntastic', { 'do': function('Installjshint') }
+
+"This is a Vim plugin that provides Tern-based JavaScript editing support
+function! BuildTern(info)
+  if a:info.status == 'installed' || a:info.force
+    !npm install
+  endif
+endfunction
+Plug 'ternjs/tern_for_vim', { 'do': function('BuildTern') }
 
 """ Custom plugins to match my workflow """
 
@@ -70,7 +83,12 @@ Plug 'skwp/greplace.vim'
 Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
 
 " Markdown preview for vim
-Plug 'suan/vim-instant-markdown', { 'for': 'markdown', 'do': '!npm -g install instant-markdown-d' }
+function! InstallInstantMarkdown(info)
+  if a:info.status == 'installed' || a:info.force
+    !npm -g install instant-markdown-d
+  endif
+endfunction
+Plug 'suan/vim-instant-markdown', { 'for': 'markdown', 'do': function('InstallInstantMarkdown') }
 
 " VIM Php Refactoring Toolbox 
 Plug 'adoy/vim-php-refactoring-toolbox', { 'for': 'php' }
@@ -79,7 +97,12 @@ Plug 'adoy/vim-php-refactoring-toolbox', { 'for': 'php' }
 " Plug 'lvht/phpcd.vim', { 'for': 'php', 'do': 'composer install' }
 
 " Use FriendsOfPHP/PHP-CS-Fixer (PHP formatter)
-Plug 'stephpy/vim-php-cs-fixer', { 'for': 'php', 'do': '!brew install php-cs-fixer' }
+function! InstallPHPCSFIXER(info)
+  if a:info.status == 'installed' || a:info.force
+    !brew install php-cs-fixer
+  endif
+endfunction
+Plug 'stephpy/vim-php-cs-fixer', { 'for': 'php', 'do': function( 'InstallPHPCSFIXER' ) }
 
 " vim-snipmate default snippets (Previously snipmate-snippets)
 Plug 'honza/vim-snippets'
