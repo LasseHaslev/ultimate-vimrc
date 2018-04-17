@@ -62,14 +62,19 @@ nmap <leader>ldct :!ctags -R --exclude=node_modules --exclude=database --exclude
 nmap <leader>lct :!ctags -a -R --exclude=node_modules --exclude=database --exclude=Graphs --exclude=storage --exclude=public --exclude=vendor --exclude=vendor<cr>
 
 " Ctags navigtaion
-map <leader>b <C-]> " Go to the original method
-map <leader>bn :tn<cr> " Next tag
-map <leader>bp :tp<cr> " previus tag
-map <leader>bo <C-t> " Back out to the original file
+" Go to the original method
+map <leader>b <C-]>
+" Next tag
+map <leader>bn :tn<cr>
+" previus tag
+map <leader>bp :tp<cr>
+" Back out to the original file
+map <leader>bo <C-t>
 
 " Search - Map <Space> to /
 map <space> /
-nmap <Leader><space> :nohlsearch<cr> " Remove search results
+" Remove search results
+nmap <Leader><space> :nohlsearch<cr>
 set incsearch
 
 " Nerdcommenter
