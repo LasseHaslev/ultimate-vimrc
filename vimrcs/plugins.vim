@@ -5,8 +5,8 @@ filetype off                  " required
 " set the runtime path to include plugin manager
 call plug#begin('~/.vim/plugged')
 
-" Colorscheme xoria256
-Plug 'fugalh/desert.vim'
+" Colorscheme
+Plug 'connorholyday/vim-snazzy'
 
 " Navigation menu
 " https://github.com/scrooloose/nerdtree

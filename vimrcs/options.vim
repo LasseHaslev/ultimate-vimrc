@@ -1,5 +1,5 @@
 " Style the vim
-colorscheme desert
+colorscheme snazzy
 
 " set macligatures
 
