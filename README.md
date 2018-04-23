@@ -1,11 +1,11 @@
 # Ultimate .vimrc
-This is **my personal version** of the ultimate basic vim setup, based on [**JeffreyWay/.vimrc**](https://gist.github.com/JeffreyWay/6753834) and some inspiration from [**Amix/vimrc**](https://github.com/amix/vimrc).
+This is **my personal version** of the ultimate basic vim setup, based on [**JeffreyWay/.vimrc**](https://gist.github.com/JeffreyWay/6753834) and inspired by [**Amix/vimrc**](https://github.com/amix/vimrc).
 
-This branch is based on the [ultimate-vimrc](https://github.com/LasseHaslev/ultimate-vimrc), that is meant as a general starting point for vim, and contains the essential building blocks for a powerful vim editor.
+This personal version of is modified to be perfect for my workflow.
+- PHP with [Laravel](https://laravel.com)
+- HTML, CSS and javascript
 
-This personal version of is modified to be perfect for my workflow, where I mostly work with html, javascript and php with Laravel.
-
-> I really recomend checking out this serie [Vim Mastery](https://laracasts.com/series/vim-mastery) from [Jeffrey Way](https://twitter.com/jeffrey_way) to get a full understanding of the power of vim text editor.
+> I really recommend checking out [Vim Mastery](https://laracasts.com/series/vim-mastery) series from [Jeffrey Way](https://twitter.com/jeffrey_way) to get a full understanding of the power of vim text editor.
 
 ## Install
 
@@ -69,4 +69,4 @@ If you want to install more plugins just add them to this file and run:
 >:PlugInstall
 
 #### !Important
-Remember to refresh vim after you have done changes to any of these files.
+Remember to source files or restart vim after you have done changes to any of these files.
