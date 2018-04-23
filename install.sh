@@ -17,6 +17,9 @@ echo "Setting up vim plugin manager"
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+# Brows like a pro with ctags
+brew install ctags
+
 # install plugins in vim with Vundle
 echo "Installing vim plugins"
 vim +PlugInstall +qa!

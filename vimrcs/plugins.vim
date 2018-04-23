@@ -74,7 +74,12 @@ Plug 'rhysd/accelerated-jk'
 Plug 'tpope/vim-vinegar'
 
 " Vim plugin for the_silver_searcher, 'ag', a replacement for the Perl module / CLI script 'ack' 
-Plug 'rking/ag.vim'
+function! InstallSilverSearcher(info)
+  if a:info.status == 'installed' || a:info.force
+    !brew install the_silver_searcher
+  endif
+endfunction
+Plug 'rking/ag.vim', {'do': function('InstallSilverSearcher')}
 
 " Global search and replace for VI
 Plug 'skwp/greplace.vim'
