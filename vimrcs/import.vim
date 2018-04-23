@@ -1,4 +1,4 @@
-" Import Vundle plugins
+" Import plugins
 source ~/.vim/runtime/vimrcs/plugins.vim
 
 " Import options file

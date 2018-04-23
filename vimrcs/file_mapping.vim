@@ -1,4 +1,4 @@
-" Edit git ignore file
+" Edit .gitignore file
 nmap <leader>gi :e .gitignore<cr>
 
 " Shortcuts for editing vimrc files
@@ -11,8 +11,16 @@ nmap <leader>evm :e ~/.vim/runtime/vimrcs/mapping.vim<cr>
 nmap <leader>evo :e ~/.vim/runtime/vimrcs/options.vim<cr>
 nmap <leader>evp :e ~/.vim/runtime/vimrcs/plugins.vim<cr>
 
-" Edit todo list for project
-nmap <leader>todo :e todo.txt<cr>
+" Laravel 5.3
+nmap <leader>lrw :e routes/web.php<cr>
+nmap <leader>lra :e routes/api.php<cr>
+nmap <leader>lca :e config/app.php<cr>153G
+nmap <leader>lc :e composer.json<cr>
+nmap <leader>lp :e package.json<cr>
+nmap <leader>env :e .env<cr>
 
-" Edit bash profile
+" Other
+nmap <leader>rm :e README.md<cr>
+
+" Bash profile
 nmap <leader>bp :e ~/.zshrc<cr>G

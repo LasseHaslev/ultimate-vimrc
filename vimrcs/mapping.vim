@@ -6,18 +6,12 @@ nmap ,nn :NERDTreeToggle<cr>
 let mapleader = ","
 let g:mapleader = ","
  
-" Fast saves
-nmap <leader>w :w!<cr>
- 
 " Down is really the next line
 nnoremap j gj
 nnoremap k gk
 
 "Easy escaping to normal model
 imap jj <esc>
-
-" paste multiple times
-xnoremap p pgvy
  
 "Auto change directory to match current file ,cd
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
@@ -30,31 +24,44 @@ nmap <C-l> <C-w>l
 
 "Resize vsplit
 nmap <C-v> :vertical resize +5<cr>
-nmap <Leader>25 :vertical resize 40<cr>
-nmap <Leader>50 <c-w>=
-nmap <Leader>75 :vertical resize 120<cr>
-
-" Create split below
-nmap :sp :rightbelow sp<cr>
 
 " Open splits
 nmap vs :vsplit<cr>
 nmap sp :split<cr>
- 
-" Create/edit file in the current directory
-nmap :ed :edit %:p:h/
 
 " CtrlP Stuff
 " Familiar commands for file/symbol browsing
 map <C-f> :CtrlP<cr>
+map <leader><C-f> :CtrlPBuffer<cr>
 map <C-r> :CtrlPBufTag<cr>
 " map <C-r> :CtrlPMRUFiles<cr>
+map <leader>fr :CtrlPClearCache<cr><C-f>
 
-" Sort lines
-" http://stackoverflow.com/questions/11531073/how-do-you-sort-a-range-of-lines-by-length
+" Vim PHP namespace
+function! IPhpInsertUse()
+    call PhpInsertUse()
+    call feedkeys('a',  'n')
+endfunction
+autocmd FileType php inoremap <Leader>na <Esc>:call IPhpInsertUse()<CR>
+autocmd FileType php noremap <Leader>na :call PhpInsertUse()<CR>
+
+function! IPhpExpandClass()
+    call PhpExpandClass()
+    call feedkeys('a', 'n')
+endfunction
+autocmd FileType php inoremap <Leader>nf <Esc>:call IPhpExpandClass()<CR>
+autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
+
+"Sort PHP use statements
+"http://stackoverflow.com/questions/11531073/how-do-you-sort-a-range-of-lines-by-length
 vmap <Leader>su ! awk '{ print length(), $0 \| "sort -n \| cut -d\\  -f2-" }'<cr>
 
 " Ctags
+nmap <leader>ct :!ctags -R<cr>
+nmap <leader>ldct :!ctags -R --exclude=node_modules --exclude=database --exclude=Graphs --exclude=storage --exclude=public --exclude=vendor/phpspec --exclude=vendor/phpunit<cr>
+nmap <leader>lct :!ctags -a -R --exclude=node_modules --exclude=database --exclude=Graphs --exclude=storage --exclude=public --exclude=vendor --exclude=vendor<cr>
+
+" Ctags navigtaion
 " Go to the original method
 map <leader>b <C-]>
 " Next tag
@@ -63,34 +70,51 @@ map <leader>bn :tn<cr>
 map <leader>bp :tp<cr>
 " Back out to the original file
 map <leader>bo <C-t>
-" Update Ctag file
-nmap <leader>ct :!ctags -R<cr>
 
-" Map <Space> to / (search)
+" Search - Map <Space> to /
 map <space> /
 " Remove search results
 nmap <Leader><space> :nohlsearch<cr>
-set incsearch " Incremental search (See the search highlight as you write it)
+set incsearch
 
 " Nerdcommenter
 map <leader>cc <Plug>NERDCommenterToggle
 
-" Multiple cursors
-let g:multi_cursor_next_key='<C-s>'
-let g:multi_cursor_exit_from_insert_mode=0
+" Emmet
+let g:user_emmet_leader_key='<C-e>'
 
-" Quick mapping for the :sh command
-nmap <leader>sh :sh<cr>
+" Multiple cursors
+let g:multi_cursor_use_default_mapping=0
+let g:multi_cursor_start_word_key      = '<C-s>'
+" let g:multi_cursor_select_all_word_key = '<A-s>'
+" let g:multi_cursor_start_key           = 'g<C-n>'
+" let g:multi_cursor_select_all_key      = 'g<A-n>'
+let g:multi_cursor_next_key            = '<C-s>'
+let g:multi_cursor_prev_key            = '<C-p>'
+let g:multi_cursor_skip_key            = '<C-x>'
+let g:multi_cursor_quit_key            = '<Esc>'
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
+
+" Function for start using (http://vimawesome.com/plugin/accelerated-jk-superman)
+nmap j <Plug>(accelerated_jk_gj)
+nmap k <Plug>(accelerated_jk_gk)
 
 " greplace
 set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
 
-" Search / Search Replace
-" Search sidewide
-nmap <leader>s :Ag 
 " Search and replace project wide
 nmap <leader>sr :Gsearch<cr> 
+
+" Toggle spellcheck
+map <Leader>sc :setlocal spell!<cr>
+
+" stephpy/vim-php-cs-fixer
+nnoremap <silent><leader>pf :call PhpCsFixerFixFile()<CR>
+
+" Set mapping for php-refactoring
+let g:vim_php_refactoring_use_default_mapping = 0
+nnoremap <unique> <Leader>ep :call PhpExtractClassProperty()<CR>
+vnoremap <unique> <Leader>em :call PhpExtractMethod()<CR>

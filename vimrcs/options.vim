@@ -1,9 +1,9 @@
 " Style the vim
-" Set colorchem
-try
-    colorscheme xoria256
-catch /^Vim\%((\a\+)\)\=:E185/
-endtry
+colorscheme snazzy
+
+" set macligatures
+
+set updatetime=250 " Reduce update time from 4s to 250ms
 
 " set guifont=menlo\ for\ powerline:h40
 set guioptions-=T " Removes top toolbar
@@ -34,7 +34,8 @@ set autowriteall                   "Save on buffer switch
 set mouse=a
 syntax on                       " Set syntax color on"
 
-
+" Style spellchecking
+:hi SpellBad guibg=#c62525 ctermbg=224
 
 "Show (partial) command in the status line
 set showcmd
@@ -66,24 +67,39 @@ filetype plugin on
 let NERDSpaceDelims = 1
 let g:NERDCreateDefaultMappings = 0
 
+" delimitMate
+let delimitMate_expand_cr = 1
+let delimitMate_expand_space = 1
+
 " Ultisnips
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
+" Add vim-snippets to Ultisnips on special filetypes
+autocmd BufRead,BufNewFile *.blade.php set filetype=laravel.blade.php
+
 " Always Save everything
 :au FocusLost * :wa
 
-" tell it to use an undo file
-set undofile
 " set a directory to store the undo history
-set undodir=~/.vim/vimundo/
+set undofile
+set undodir=~/.vim/vimundo/ 
 
-" Auto close html tags
-" :iabbrev </ </<C-X><C-O>
+" vim-indent-guides
+let g:indent_guides_auto_colors = 1
+" Settings for vim-indent guides
+let g:indent_guides_enable_on_vim_startup = 1
+
+" stephpy/vim-php-cs-fixer
+let g:php_cs_fixer_rules = "@PSR2"
+let g:php_cs_fixer_config_file = $HOME . '/.vim/runtime/settings/php_cs.php'
 
 " Open vim in fullscreen
 try
     set fu
 catch /^Vim\%((\a\+)\)\=:E518/
 endtry
+
+" Word wrap without line breaks in *.md files (http://vim.wikia.com/wiki/Word_wrap_without_line_breaks)
+au BufRead,BufNewFile *.md setlocal wrap linebreak nolist textwidth=0 wrapmargin=0 formatoptions-=t

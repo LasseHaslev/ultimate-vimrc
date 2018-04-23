@@ -15,12 +15,16 @@ source ~/.vim/runtime/vimrcs/import.vim
 mkdir ~/.vim/vimundo
 
 # Install Vundle package manager
-echo "Setting up Vundle"
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+echo "Setting up vim plugin manager"
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# Brows like a pro with ctags
+brew install ctags
 
 # install plugins in vim with Vundle
-echo "Installing vundle plugins"
-vim +PluginInstall +qa!
+echo "Installing vim plugins"
+vim +PlugInstall +qa!
 
 # Give feedback that we installed the ultimate vimrc
 echo "Installed the Ultimate Vim setup."
