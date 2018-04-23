@@ -15,7 +15,7 @@ Make sure you have [npm](https://brew.sh/index_no) and [Homebrew](https://brew.s
 
 Then run the following line in your terminal
 
-```sh -c "$(curl -fsSL https://raw.githubusercontent.com/LasseHaslev/ultimate-vimrc/personal/install.sh)"```
+```sh -c "$(curl -fsSL https://raw.githubusercontent.com/LasseHaslev/ultimate-vimrc/master/install.sh)"```
 
 **Restart vim and you are good to go!**
 
