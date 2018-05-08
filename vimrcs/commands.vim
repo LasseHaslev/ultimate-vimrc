@@ -12,6 +12,9 @@ autocmd BufRead,BufNewFile *.md setlocal spell
 " Auto-remove trailing spaces
 autocmd BufWritePre *.php :%s/\s\+$//e
 
+" Auto format php files to use psr-2
+autocmd BufWritePost *.php silent! call PhpCsFixerFixFile()
+
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
