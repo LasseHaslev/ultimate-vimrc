@@ -1,43 +1,36 @@
 <?php
-$config = PhpCsFixer\Config::create()
-    ->setRiskyAllowed(true)
+
+$finder = PhpCsFixer\Finder::create()
+    ->notPath('bootstrap/cache')
+    ->notPath('storage')
+    ->notPath('vendor')
+    ->in(__DIR__)
+    ->name('*.php')
+    ->notName('*.blade.php')
+    ->ignoreDotFiles(true)
+    ->ignoreVCS(true)
+;
+
+return PhpCsFixer\Config::create()
     ->setRules([
         '@Symfony' => true,
-
-        // Arrays
+        'binary_operator_spaces' => ['align_double_arrow' => false],
         'array_syntax' => ['syntax' => 'short'],
-        'array_indentation' => true,
+        'linebreak_after_opening_tag' => true,
+        'not_operator_with_successor_space' => true,
+        'ordered_imports' => true,
+        'phpdoc_order' => true,
 
-        // Class element ordering
-        'ordered_class_elements'=>true,
-        'ordered_imports'=>[
-            'sortAlgorithm'=>'length',
-        ],
+        // Custom
+        'array_indentation' => true,
 
         // Doc blocks
         'phpdoc_add_missing_param_annotation' => [
-            'only_untyped'=>false,
+            'only_untyped' => false,
         ],
-        'phpdoc_order' => true,
-        'phpdoc_align' => true,
+        'ordered_imports' => [
+            'sortAlgorithm' => 'length',
+        ],
     ])
-    // ->setFinder(
-        // PhpCsFixer\Finder::create()
-            // // ->exclude('tests/Fixtures')
-            // ->in(__DIR__)
-    // )
+    ->setFinder($finder)
 ;
-// special handling of fabbot.io service if it's using too old PHP CS Fixer version
-try {
-    PhpCsFixer\FixerFactory::create()
-        ->registerBuiltInFixers()
-        ->registerCustomFixers($config->getCustomFixers())
-        ->useRuleSet(new PhpCsFixer\RuleSet($config->getRules()));
-} catch (PhpCsFixer\ConfigurationException\InvalidConfigurationException $e) {
-    $config->setRules([]);
-} catch (UnexpectedValueException $e) {
-    $config->setRules([]);
-} catch (InvalidArgumentException $e) {
-    $config->setRules([]);
-}
-return $config;
