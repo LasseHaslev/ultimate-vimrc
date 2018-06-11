@@ -104,14 +104,5 @@ endtry
 " Format vue
 :au BufRead,BufNewFile *.vue set filetype=html
 
-" Automatic toggling between line number modes
-" (https://jeffkreeftmeijer.com/vim-number/)
-:set number relativenumber
-:augroup numbertoggle
-:  autocmd!
-:  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-:  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-:augroup END
-
 " Word wrap without line breaks in *.md files (http://vim.wikia.com/wiki/Word_wrap_without_line_breaks)
 au BufRead,BufNewFile *.md setlocal wrap linebreak nolist textwidth=0 wrapmargin=0 formatoptions-=t
