@@ -7,6 +7,7 @@ call plug#begin('~/.vim/plugged')
 
 " Colorscheme
 Plug 'connorholyday/vim-snazzy'
+Plug 'tjammer/blayu.vim'
 
 " Navigation menu
 " https://github.com/scrooloose/nerdtree

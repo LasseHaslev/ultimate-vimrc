@@ -1,5 +1,5 @@
 " Style the vim
-colorscheme snazzy
+colorscheme blayu
 
 " set macligatures
 

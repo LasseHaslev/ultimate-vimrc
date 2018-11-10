@@ -5,6 +5,8 @@ nmap ,nn :NERDTreeToggle<cr>
 " like <leader>w saves the current file
 let mapleader = ","
 let g:mapleader = ","
+
+nmap <leader>m :marks<cr>
  
 " Down is really the next line
 nnoremap j gj
