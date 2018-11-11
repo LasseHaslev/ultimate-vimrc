@@ -119,6 +119,18 @@ Plug 'LasseHaslev/vim-snippets', {'as': 'personal-vim-snippets'}
 " Adds ";" to end of line
 Plug 'LasseHaslev/vim-period'
 
+" Async Language Server Protocol plugin for vim8 and neovim.
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
+
+" LSP for PHP
+Plug 'felixfbecker/php-language-server', {'do': 'composer install && composer run-script parse-stubs'}
+au User lsp_setup call lsp#register_server({                                    
+     \ 'name': 'php-language-server',                                            
+     \ 'cmd': {server_info->['php', expand('~/.vim/plugged/php-language-server/bin/php-language-server.php')]},
+     \ 'whitelist': ['php'],                                                     
+     \ })
+
 " A Vim plugin which shows a git diff in the gutter (sign column) and stages/undoes hunks.
 " Plug 'airblade/vim-gitgutter'
 
