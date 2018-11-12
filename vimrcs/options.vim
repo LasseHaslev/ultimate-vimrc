@@ -79,6 +79,9 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 " Add vim-snippets to Ultisnips on special filetypes
 autocmd BufRead,BufNewFile *.blade.php set filetype=laravel.blade.php
 
+" tpope/vim-commentary
+autocmd FileType php setlocal commentstring=//\ %s
+
 " Always Save everything
 :au FocusLost * :wa
 

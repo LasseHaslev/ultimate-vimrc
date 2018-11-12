@@ -79,8 +79,20 @@ map <space> /
 nmap <Leader><space> :nohlsearch<cr>
 set incsearch
 
-" Nerdcommenter
-map <leader>cc <Plug>NERDCommenterToggle
+" tpope/vim-commentary
+function! UnmapCommentary()
+  unmap gc
+  nunmap gcc
+  nunmap cgc
+  nunmap gcu
+endfunction
+
+xmap <leader>c  <Plug>Commentary
+nmap <leader>c  <Plug>Commentary
+omap <leader>c  <Plug>Commentary
+nmap <leader>cc <Plug>CommentaryLine
+nmap l<leader>c <Plug>ChangeCommentary
+nmap <leader>cu <Plug>Commentary<Plug>Commentary
 
 " Emmet
 let g:user_emmet_leader_key='<C-e>'

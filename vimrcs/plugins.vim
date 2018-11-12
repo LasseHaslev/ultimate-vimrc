@@ -17,8 +17,8 @@ Plug 'scrooloose/nerdtree'
 " https://github.com/kien/ctrlp.vim
 Plug 'kien/ctrlp.vim'
 
-" Vim plugin for intensely orgasmic commenting
-Plug 'scrooloose/nerdcommenter'
+" commentary.vim: comment stuff out
+Plug 'tpope/vim-commentary'
 
 " lean & mean status/tabline for vim that's light as air
 Plug 'bling/vim-airline'
