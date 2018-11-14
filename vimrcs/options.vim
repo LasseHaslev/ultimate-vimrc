@@ -52,6 +52,7 @@ set encoding=utf-8 " Necessary to show Unicode glyphs
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 
 
+
 " CtrlP Stuff
 " I don't want to pull up these folders/files when calling CtrlP
 set wildignore+=*/vendor/**
@@ -81,6 +82,7 @@ autocmd BufRead,BufNewFile *.blade.php set filetype=laravel.blade.php
 
 " tpope/vim-commentary
 autocmd FileType php setlocal commentstring=//\ %s
+autocmd FileType laravel.blade.php setlocal commentstring={{--\ %s\ --}}
 
 " Always Save everything
 :au FocusLost * :wa
