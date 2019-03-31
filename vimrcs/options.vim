@@ -1,5 +1,8 @@
 " Style the vim
-colorscheme blayu
+set background=dark
+colorscheme palenight
+
+set termguicolors
 
 " set macligatures
 
