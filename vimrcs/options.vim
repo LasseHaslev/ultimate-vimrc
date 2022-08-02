@@ -9,7 +9,7 @@ set updatetime=250 " Reduce update time from 4s to 250ms
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
 set go-=L " Removes left hand scroll bar
-set linespace=15
+set linespace=14
 
 set showmode                    " always show what mode we're currently editing in
 set nowrap                      " don't wrap lines
@@ -33,6 +33,10 @@ set noerrorbells         " don't beep
 set autowriteall                   "Save on buffer switch
 set mouse=a
 syntax on                       " Set syntax color on"
+
+" Folding
+" set foldmethod=marker
+" autocmd FileType php,vue,javascript setlocal foldmethod=syntax
 
 " Style spellchecking
 :hi SpellBad guibg=#c62525 ctermbg=224
@@ -58,6 +62,8 @@ set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusl
 set wildignore+=*/vendor/**
 set wildignore+=*/public/forum/**
 set wildignore+=*/node_modules/**
+
+
 
 " Remember info about open buffers on close
 set viminfo^=%
