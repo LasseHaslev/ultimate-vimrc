@@ -1,5 +1,8 @@
 " Style the vim
-colorscheme blayu
+set background=dark
+colorscheme palenight
+
+set termguicolors
 
 " set macligatures
 
@@ -111,9 +114,6 @@ try
     set fu
 catch /^Vim\%((\a\+)\)\=:E518/
 endtry
-
-" Format vue
-:au BufRead,BufNewFile *.vue set filetype=html
 
 " Word wrap without line breaks in *.md files (http://vim.wikia.com/wiki/Word_wrap_without_line_breaks)
 au BufRead,BufNewFile *.md setlocal wrap linebreak nolist textwidth=0 wrapmargin=0 formatoptions-=t

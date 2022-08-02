@@ -10,6 +10,9 @@ Plug 'connorholyday/vim-snazzy'
 Plug 'tjammer/blayu.vim'
 Plug 'drewtempelmeyer/palenight.vim'
 
+" Vim vue plugin
+Plug 'posva/vim-vue'
+
 " Navigation menu
 " https://github.com/scrooloose/nerdtree
 Plug 'scrooloose/nerdtree'
